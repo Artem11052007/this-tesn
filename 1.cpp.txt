@@ -3,18 +3,18 @@ using namespace std;
 
 int main() {
     int number;
-    cout << "Vveditʹ tryznachne chyslo: ";
+    cout << "Ввудіть тризначне число: ";
     cin >> number;
 
     while (number < 100 || number > 999) {
-        cout << "Vveditʹ tryznachne chyslo: ";
+        cout << "Введіть тризначне число: ";
         cin >> number;
     }
 
     int h = number / 100, t = (number / 10) % 10, u = number % 10;
-    cout << (h < t && t < u ? "Tsyfry utvoryuyutʹ zrostayuchu poslidovnist." :
-               h > t && t > u ? "Tsyfry utvoryuyutʹ spadayuchu poslidovnist." :
-               "Tsyfry ne utvoryuyutʹ zrostayuchu abo spadnu poslidovnist.") << endl;
+    cout << (h < t && t < u ? "Цифри утворюють зростаючу послідовність" :
+               h > t && t > u ? "Цифри утворюють спадну послідовність" :
+               "Цифри не утворюють зростаючу або спадаючу послідовність") << endl;
 
     return 0;
 }
