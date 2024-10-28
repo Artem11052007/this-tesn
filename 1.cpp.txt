@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number;
+    cout << "Vveditʹ tryznachne chyslo: ";
+    cin >> number;
+
+    while (number < 100 || number > 999) {
+        cout << "Vveditʹ tryznachne chyslo: ";
+        cin >> number;
+    }
+
+    int h = number / 100, t = (number / 10) % 10, u = number % 10;
+    cout << (h < t && t < u ? "Tsyfry utvoryuyutʹ zrostayuchu poslidovnist." :
+               h > t && t > u ? "Tsyfry utvoryuyutʹ spadayuchu poslidovnist." :
+               "Tsyfry ne utvoryuyutʹ zrostayuchu abo spadnu poslidovnist.") << endl;
+
+    return 0;
+}
