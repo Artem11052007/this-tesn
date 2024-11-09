@@ -7,23 +7,7 @@ int main() {
     cin >> number;
 
     while (number < 100 || number > 999) {
-        cout << "Введіть тризначне число: ";
-        cin >> number;while (number < 100 || number > 999) {
-        cout << "Введіть тризначне число: ";
-        cin >> number;while (number < 100 || number > 999) {
-        cout << "Введіть тризначне число: ";
-        cin >> number;while (number < 100 || number > 999) {
-        cout << "Введіть тризначне число: ";
-        cin >> number;while (number < 100 || number > 999) {
-        cout << "Введіть тризначне число: ";
-        cin >> number;while (number < 100 || number > 999) {
-        cout << "Введіть тризначне число: ";
-        cin >> number;while (number < 100 || number > 999) {
-        cout << "Введіть тризначне число: ";
-        cin >> number;while (number < 100 || number > 999) {
-        cout << "Введіть тризначне число: ";
-        cin >> number;while (number < 100 || number > 999) {
-        cout << "Введіть тризначне число: ";
+       
         cin >> number;
     }
 
@@ -37,6 +21,16 @@ int main() {
                "Цифри не утворюють зростаючу або спадаючу послідовність") << endl; h > t && t > u ? "Цифри утворюють спадну послідовність" :
                "Цифри не утворюють зростаючу або спадаючу послідовність") << endl; h > t && t > u ? "Цифри утворюють спадну послідовність" :
                "Цифри не утворюють зростаючу або спадаючу послідовність") << endl;
+cout << "\nEnter k =" << cum << endl;
+ const int c=10;
+  int b[c] = {3, 9, 57, 10, 8};
+for(int i =0; i<c; i++){
+  b[i] = rand()%100 -1;
+  cout << setw(5) << b[i];
+}
+  int k =0; 
+ for(int i =0; i<c; i++){
+ if(b[i] % c == 0){
 
     return 0;
 }
